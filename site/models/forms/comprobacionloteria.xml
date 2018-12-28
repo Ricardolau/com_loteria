@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Añadimos los campo queremos mostrar en la vista de codigorecibo
+	que la vista entrada de datos -->
+<form>
+	<fieldset name="comprobacionloteria" label="COM_CONTACT_FORM_LABEL">
+		
+		<field name="recibo_site"
+			type="text"
+			id="comprobacionloteria-recibo"
+			label="COM_COMPROBACIONLOTERIA_FIELD_SITE_RECIBO_LABEL"
+			description="COM_COMPROBACIONLOTERIA_SITE_FIELD_RECIBO_DESC"
+			filter="string"
+			required="true"
+			size="30"
+		/>
+		<field name="comprobacionloteria_codigo"
+			type="text"
+			id="codigorecibo-codigo"
+			size="30"
+			description="COM_COMPROBACIONLOTERIA_CODIGORECIBO_CODIGO_DESC"
+			label="COM_COMPROBACIONLOTERIA_CODIGORECIBO_CODIGO_LABEL"
+			filter="string"
+			required="true"
+		/>
+
+	</fieldset>
+</form>
+
+<!--	
+			description="COM_CODIGORECIBO_CODIGORECIBO_CODIGO_DESC"
+			label="COM_CODIGORECIBO_CODIGORECIBO_CODIGO_LABEL"
+			-->

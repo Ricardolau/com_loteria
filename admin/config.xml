@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	
+	<fieldset name="Codigo_Form"
+		label="COM_COMPROBACIONLOTERIA_FIELD_CONFIG_CODIGORECIBO_FORM"
+		description="COM_COMPROBACIONLOTERIA_FIELD_CONFIG_INDIVIDUAL_CODIGORECIBO_DESC"
+	>
+	<field name="texto_principal"
+			type="textarea"
+			label="COM_COMPROBACIONLOTERIA_FIELD_CONFIG_TEXTO_PRINCIPAL_LABEL"
+			rows="3"
+			cols="30"
+			description="COM_COMPROBACIONLOTERIA_FIELD_CONFIG_TEXTO_PRINCIPAL_DESC"
+		/>
+
+		<field name="texto_secundario"
+			type="textarea"
+			label="COM_COMPROBACIONLOTERIA_FIELD_CONFIG_TEXTO_SECUNDARIO_LABEL"
+			rows="3"
+			cols="30"
+			description="COM_COMPROBACIONLOTERIA_FIELD_CONFIG_TEXTO_SECUNDARIO_DESC"
+		/>
+	</fieldset>
+	
+
+	
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC"
+		>
+
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			filter="rules"
+			validate="rules"
+			component="com_comprobacionLoteria"
+			section="component"/>
+	</fieldset>
+</config>
