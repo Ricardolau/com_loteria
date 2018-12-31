@@ -8,7 +8,7 @@
 	<authorEmail>info@solucionesvigo.com</authorEmail>
 	<authorUrl>www.joomla.org</authorUrl>
 	<version>1.0.0</version>
-	<description>COM_COMPROBACIONLOTERIA_XML_DESCRIPTION</description>
+	<description>COM_COMPROBARLOTERIA_XML_DESCRIPTION</description>
 	
 	<install> 
 		<sql>
@@ -33,10 +33,8 @@
 		
 	</files>
 	<languages folder="site">
-		<language tag="es-ES">language/es-ES.com_comprobacionLoteria.ini</language>
-   		<language tag="en-GB">language/en-GB.com_comprobacionLoteria.ini</language>
-
-    </languages>
+		<language tag="es-ES">language/es-ES.com_comprobacionloteria.ini</language>
+	</languages>
 	<administration>
 		
 		<!--Nombre que se muestra en la pestaña de componentes-->
@@ -48,7 +46,8 @@
 			<filename>controller.php</filename>	
 			<filename>access.xml</filename>
 			<filename>config.xml</filename>
-            <folder>sql</folder>
+		
+			<folder>sql</folder>
 			<folder>models</folder>
 			<folder>views</folder>
 			<folder>tables</folder>		
@@ -56,11 +55,8 @@
 							
 		</files>
 		<languages folder="admin">
-			<language tag="es-ES">language/es-ES.com_comprobacionLoteria.ini</language>
-			<language tag="es-ES">language/es-ES.com_comprobacionLoteria.sys.ini</language>
-       		<language tag="en-GB">language/en-GB.com_comprobacionLoteria.ini</language>
-            <language tag="en-GB">language/en-GB.com_comprobacionLoteria.sys.ini</language>
-
+			<language tag="es-ES">language/es-ES.com_comprobacionloteria.ini</language>
+			<language tag="es-ES">language/es-ES.com_comprobacionloteria.sys.ini</language>
 		</languages>
 	</administration>
 </extension>

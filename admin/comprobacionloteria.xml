@@ -33,7 +33,7 @@
 		
 	</files>
 	<languages folder="site">
-		<language tag="es-ES">language/es-ES.com_comprobacionLoteria.ini</language>
+		<language tag="es-ES">language/es-ES.com_comprobacionloteria.ini</language>
 	</languages>
 	<administration>
 		
@@ -55,8 +55,8 @@
 							
 		</files>
 		<languages folder="admin">
-			<language tag="es-ES">language/es-ES.com_comprobacionLoteria.ini</language>
-			<language tag="es-ES">language/es-ES.com_comprobacionLoteria.sys.ini</language>
+			<language tag="es-ES">language/es-ES.com_comprobacionloteria.ini</language>
+			<language tag="es-ES">language/es-ES.com_comprobacionloteria.sys.ini</language>
 		</languages>
 	</administration>
 </extension>

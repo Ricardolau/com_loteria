@@ -20,14 +20,14 @@ class ComprobacionloteriaModelVista1 extends JModelList
 			$jinput = JFactory::getApplication()->input; 
 			$data =$jinput->getArray($_POST);;
 			$envio = $data['jform'];
-			$recibo = $envio['recibo_site'];
-			$codigo = $envio['comprobacionloteria_codigo']; 
+			$numeroParticipacion = $envio['recibo_site'];
+			$cantidadJugada = $envio['comprobacionloteria_codigo']; 
 			//~ echo '<pre>';
             //~ print_r($data);
             //~ echo '</pre>';
 			$db = JFactory::getDBO();
-			$query = "SELECT codigo, recibo, tonelada FROM #__comprobacionLoteria "
-					."WHERE codigo ='".$codigo."' AND recibo ='".$recibo."'";
+			$query = "SELECT * FROM #__comprobacionLoteria "
+					."WHERE numeroParticipacion ='".$numeroParticipacion."' AND cantidadJugada ='".$cantidadJugada."'";
 			$db->setQuery($query);
 			$resul =  $db->loadObjectList();
 			//~ $resul['Busqueda'] = $query;

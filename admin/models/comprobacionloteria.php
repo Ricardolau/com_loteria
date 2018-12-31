@@ -12,7 +12,7 @@ class ComprobacionloteriaModelComprobacionloteria extends JModelList
 		$db = JFactory::getDBO();
 		$query = $db->getQuery(true);
 		// Selecciona algunos campos
-		$query->select('id, created,numeroParticipacion, cantidadJugada');
+		$query->select('id, created,numeroParticipacion, cantidadJugada, vendido, cajero, pagada');
 		// de nuestra tabla
 		$query->from('#__comprobacionLoteria');
 		

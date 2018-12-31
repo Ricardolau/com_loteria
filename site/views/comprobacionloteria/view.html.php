@@ -8,17 +8,28 @@ class ComprobacionloteriaViewComprobacionloteria extends JViewLegacy
 	
 	function display($tpl = null)
 	{
-		//$this->msg ='hola front-end';
 		$item = $this->get('Item');
-		$this->form = $this->get('Form');
-		
+
+        $this->form = $this->get('Form');
+        $this->userLoteria = JFactory::getUser();
 		//Consigo los parametros de opc config (btn menu toolbar dl com_nuevo)
-		$params = JComponentHelper::getParams('com_comprobacionLoteria');
+		$params = JComponentHelper::getParams('com_comprobacionloteria');
 			//$titul=$params->get('texto_principal');
 		
 		$this->assignRef('params',		$params);	
-		
-		//display de la vista
+
+        $t = $this->get('Totales');
+        $respuesta = array();
+        foreach ($t as $key=>$participaciones){
+                 $respuesta[$key]['usuario']=JFactory::getUser($key)->name;
+                 $respuesta[$key]['participaciones']= $participaciones;
+        }
+        $this->resultado = $respuesta;
+        //~ echo '<pre>';
+        //~ print_r($this->resultado);
+        //~ echo '</pre>';
+
+        		//display de la vista
 		parent::display($tpl);
 	}
 	

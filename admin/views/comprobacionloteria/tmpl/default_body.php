@@ -24,6 +24,15 @@ foreach($this->items as $i => $item): ?>
 		<td>
 			<?php echo $item->cantidadJugada; ?>
 		</td>
+        <td>
+			<?php echo $item->vendido; ?>
+		</td>
+        <td>
+			<?php echo $item->cajero; ?>
+		</td>
+        <td>
+			<?php echo $item->pagada; ?>
+		</td>
 	</tr>
 <?php endforeach; ?>
 <!--JHTML :: _ es una función auxiliar capaz de mostrar varios salida HTML.
